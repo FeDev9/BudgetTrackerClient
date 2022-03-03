@@ -1,142 +1,70 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-
-.auth-hide, .profile-hide {
+.auth-hide,
+.profile-hide {
     display: none;
 }
 
-.auth, .profile {
+.auth,
+.profile {
     display: block;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap");
 
 body {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Outfit';
+    font-family: "Outfit";
 }
-
-/* === Navbar ===== */
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-    background-color: #283593;
-    color: white;
-}
-
-.navbar ul {
-    display: flex;
-    margin-right: 2rem;
-}
-
-.navbar ul li {
-    list-style-type: none;
-    padding: 1rem;
-    margin: 0.5rem 1.5rem;
-    border-radius: 20px;
-    background-color: white;
-}
-
-.navbar ul li:hover {
-    transform: scale(1.1);
-    transition: 0.4s ease-in-out;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #283593;
-}
-
-.navbar .logo {
-    font-size: 25px;
-    padding: 1rem;
-    margin: 1rem;
-}
-
-/* === Homepage ===== */
-
-.homepage-cnt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #bebebe70;
-    margin: 2rem 10rem;
-    padding: 2rem;
-    border-radius: 20px;
-}
-
-.homepage-cnt a {
-
-    padding: 0.5rem;
-    margin: 0.5rem;
-    background-color: #283593;
-    border-radius: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    padding: 1rem;
-}
-
 
 /* === Login/Register ===== */
-
-
 
 .login-register-cnt {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-
-
-.login-cnt, .register-cnt {
+.login-cnt,
+.register-cnt {
     background-color: #283593;
     border-radius: 20px;
     padding: 1rem;
@@ -145,39 +73,43 @@ body {
     width: 500px;
 }
 
-.login-cnt .title, .register-cnt .title{
+.login-cnt .title,
+.register-cnt .title {
     color: white;
     text-align: center;
 }
 
-.login-cnt .input-box, .register-cnt .input-box {
+.login-cnt .input-box,
+.register-cnt .input-box {
     display: flex;
     width: 90%;
     flex-direction: column;
     border-radius: 20px;
-    background-color: whitesmoke ;
+    background-color: whitesmoke;
     padding: 1rem;
     margin: 1rem;
 }
 
-.login-cnt form , .register-cnt form, .add-cnt{
+.login-cnt form,
+.register-cnt form,
+.add-cnt {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 
-.login-cnt form .input-box label, .register-cnt form .input-box label {
-
+.login-cnt form .input-box label,
+.register-cnt form .input-box label {
     text-transform: uppercase;
     text-align: center;
     font-size: small;
     margin-bottom: 0.5rem;
 }
 
-.login-cnt form input, .register-cnt form input {
-    font-family: 'Outfit';
+.login-cnt form input,
+.register-cnt form input {
+    font-family: "Outfit";
     border: 1px solid whitesmoke;
     border-radius: 20px;
     padding: 0.75rem;
@@ -185,17 +117,17 @@ body {
     outline: transparent;
     text-align: center;
     font-size: 18px;
-
 }
 
-.login-cnt form input:focus, .register-cnt form input:focus {
+.login-cnt form input:focus,
+.register-cnt form input:focus {
     transform: scale(1.07);
-    transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out;
     background-color: #bebebe70;
 }
 
-.login-cnt form button, .register-cnt form button{
-
+.login-cnt form button,
+.register-cnt form button {
     padding: 1rem;
     margin: 1rem;
     background-color: whitesmoke;
@@ -206,8 +138,8 @@ body {
     font-size: 15px;
 }
 
-.login-cnt form button:hover, .register-cnt form button:hover{
-
+.login-cnt form button:hover,
+.register-cnt form button:hover {
     transform: scale(1.1);
     transition: 0.4s ease-in-out;
 }
@@ -219,326 +151,4 @@ body {
     text-align: center;
     color: rgb(105, 0, 0);
     margin: 1rem 10rem;
-}
-
-
-/* === Profile ===== */
-
-.profile-cnt {
-    display: flex;
-    
-}
-
-.profile-card {
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(228, 227, 227);
-    border-radius: 20px;
-    margin: 2rem;
-    height: 550px;
-}
-
-.profile-card {
-    flex: 1;
-    
-}
-
-.profile-card p {
-    text-align: center;
-}
-
-.profile-page {
-    flex: 2;
-    margin-left: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 2rem;
-}
-
-.profile-card .avatar-cnt {
-    background-color: #283593;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 20px;
-}
-
-.profile-card .avatar-cnt img {
-    width: 65%;
-    
-}
-
-.profile-card .card-title {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 0.5rem;
-}
-
-.profile-card button {
-    text-decoration: none;
-    color: white;
-    background-color: #283593;
-    padding: 1rem 2rem;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-
-}
-
-.profile-page .profile-header {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    width: 100%;
-}
-
-.profile-page .bal-inc-exp, .profile-page .add-transaction {
-    flex:1;
-    background-color: white;
-    border-radius: 20px;
-    margin: 0 2rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 320px;
-    background-color: rgb(228, 227, 227);
-}
-
-.profile-page .bal-inc-exp {
-    justify-content: space-around;
-}
-
-.profile-page .add-transaction form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.profile-page .add-transaction .input-box {
-    display: flex;
-    flex-direction: column;
-}
-
-.profile-page .bal-inc-exp .title-cnt {
-    margin: 0.5rem  0 0  0;
-    text-transform: uppercase;
-    font-size: 17px;
-}
-
-.profile-page .bal-inc-exp .title {
-    text-transform: uppercase;
-    margin: 0.5rem;
-}
-
-.profile-page .bal-inc-exp .value {
-    text-align: center;
-    margin: 0.5rem;
-}
-
-.profile-page .bal-inc-exp .inc {
-
-    background-color: #00B74A;
-    width: 75%;
-    border-radius: 20px;
-}
-
-.profile-page .bal-inc-exp .exp {
-    background-color: #f93154;
-    width: 75%;
-    border-radius: 20px;
-}
-
-.profile-page .bal-inc-exp .bal {
-    background-color: darkgray;
-    width: 75%;
-    border-radius: 20px;
-}
-
-.profile-page .bal-inc-exp .title {
-    text-align: center;
-}
-
-.profile-page .transaction .title {
-    margin-top: 2rem;
-    text-align: center;
-}
-
-.transaction .title {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 2rem;
-}
-
-
-
-/* === transactions ===*/
-
-.transaction {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.transaction .single {
-    display: flex;
-    align-items: center;
-    background-color: rgb(228, 227, 227);
-    margin: 1rem 2rem;
-    padding: 0 0.5rem;
-    border-radius: 0 20px 20px 0;
-}
-
-.transaction .single .data {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-.transaction .single button {
-    color: white;
-    font-weight: 600;
-    padding: 0 1rem;
-    background-color: #f93154;
-    padding: 0.5rem;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-}
-.transaction .single .data p {
-    width: 100px;
-    overflow: hidden;
-}
-
-.transaction .negative {
-    border-left: 5px solid #f93154;
-}
-
-.transaction .positive {
-    border-left: 5px solid #00B74A;
-}
-
-/* === Add transaction ===*/
-
-.add-transaction .title {
-    text-transform: uppercase;
-margin: 1em;
-}
-
-.add-transaction .input-box {
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-    border-radius: 20px;
-    background-color: whitesmoke ;
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
-
-.add-transaction .input-box label {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: small;
-    margin-bottom: 0.5rem;
-}
-
-.add-transaction .input-box label span {
-    text-transform: lowercase;
-}
-
-.add-transaction .input-box input {
-
-    font-family: 'Outfit';
-    border: 1px solid whitesmoke;
-    border-radius: 20px;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-    outline: transparent;
-    text-align: center;
-    font-size: 18px;
-
-}
-
-.add-transaction form input:focus{
-    transform: scale(1.07);
-    transition: 0.4s ease-in-out; 
-    background-color: #bebebe70;
-}
-
-.add-transaction form button{
-
-    padding: 0.5rem;
-    margin: 0.5rem;
-    background-color: #283593;
-    border-radius: 20px;
-    width: 33%;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 15px;
-    color: white;
-}
-
-.add-transaction form button:hover{
-
-    transform: scale(1.1);
-    transition: 0.4s ease-in-out;
-}
-
-/*=== filter form ====*/
-
-.filter-form form {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #bebebe70;
-    border-radius: 20px;
-}
-
-.filter-form label {
-    padding: 1rem;
-
-}
-
-.filter-form form button {
-    padding: 0.5rem;
-    margin: 0.5rem;
-    background-color: #283593;
-    border-radius: 20px;
-    width: 20%;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 15px;
-    color: white;
-}
-
-.filter-form form input {
-    border-radius: 20px;
-    font-family: 'Outfit';
-    padding: 0.5rem;
-    text-align: center;
-}
-
-.deleted {
-    background-color: gray;
-    border: 5px solid black;
-}
-
-.filter-title {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 2rem;
-}
-
-.profile-card a {
-    border-radius: 20px;
-    padding: 1rem;
-    background-color: #f93154;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
 }

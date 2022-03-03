@@ -1,0 +1,75 @@
+.add-transaction {
+    .title {
+        text-transform: uppercase;
+        margin: 1em;
+    }
+
+    .input-box {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: whitesmoke;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        min-width: 370px;
+
+        .field {
+            text-align: center;
+            font-size: small;
+            margin-bottom: 0.5rem;
+        }
+        label {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: small;
+            margin-bottom: 0.5rem;
+
+            span {
+                text-transform: lowercase;
+                text-align: center;
+            }
+        }
+
+        .field {
+            font-family: "Outfit";
+            border: 1px solid whitesmoke;
+            border-radius: 20px;
+            padding: 0.5rem;
+            margin: 0 0.5rem;
+            outline: transparent;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+
+    Form .field:focus {
+        transform: scale(1.07);
+        transition: 0.4s ease-in-out;
+        background-color: #bebebe70;
+    }
+
+    Form button {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        background-color: #283593;
+        border-radius: 20px;
+        width: 33%;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 15px;
+        color: white;
+        border: none;
+    }
+
+    Form button:hover {
+        transform: scale(1.1);
+        transition: 0.4s ease-in-out;
+    }
+}
+
+@media (min-width: 453px) and (max-width: 768px) {
+    .input-box {
+        margin: 1rem;
+    }
+}

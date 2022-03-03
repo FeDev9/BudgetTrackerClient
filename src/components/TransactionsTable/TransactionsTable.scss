@@ -1,0 +1,44 @@
+.transaction {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .single {
+        display: flex;
+        align-items: center;
+        background-color: rgb(228, 227, 227);
+        margin: 1rem 2rem;
+        padding: 0 0.5rem;
+        border-radius: 0 20px 20px 0;
+
+        .data {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+
+            p {
+                width: 100px;
+                overflow: hidden;
+            }
+        }
+
+        .delete {
+            border-radius: 20px;
+            border: none;
+            background-color: #f93154;
+            color: white;
+            padding: 0.5rem;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    }
+
+    .negative {
+        border-left: 5px solid #f93154;
+    }
+
+    .positive {
+        border-left: 5px solid #00b74a;
+    }
+}
