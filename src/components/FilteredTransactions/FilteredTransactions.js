@@ -13,7 +13,7 @@ const FilteredTransactions = (props) => {
 
     const filter = (values) => {
         const fetchData = async () => {
-            const results = await axios.put('http://localhost:3005/user/transactions/filter', {
+            const results = await axios.put('https://fedev9-budget-tracker-server.herokuapp.com/user/transactions/filter', {
 
                 dateStart: values.dateStart,
                 dateEnd: values.dateEnd,

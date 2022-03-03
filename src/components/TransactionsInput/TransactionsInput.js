@@ -8,7 +8,7 @@ const TransactionsInput = (props) => {
     const addTransaction = (values) => {
 
         const fetchData = async () => {
-            await axios.post('http://localhost:3005/user/transactions/add-transaction', {
+            await axios.post('https://fedev9-budget-tracker-server.herokuapp.com/user/transactions/add-transaction', {
                 userId: props.userId,
                 type: values.type,
                 value: values.value

@@ -22,7 +22,7 @@ const Profile = (props) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const results = await axios.put('http://localhost:3005/user', {
+            const results = await axios.put('https://fedev9-budget-tracker-server.herokuapp.com/user', {
                 userId: props.userId
             });
 

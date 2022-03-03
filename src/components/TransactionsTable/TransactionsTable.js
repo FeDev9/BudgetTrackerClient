@@ -8,7 +8,7 @@ const TransactionsTable = (props) => {
     const deleteTransaction = (id) => {
 
         const fetchData = async () => {
-            await axios.delete(`http://localhost:3005/user/transactions/delete-transaction/${id}`, {
+            await axios.delete(`https://fedev9-budget-tracker-server.herokuapp.com/user/transactions/delete-transaction/${id}`, {
                 data: {
                     id: id,
                     userId: props.userId

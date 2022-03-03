@@ -22,7 +22,7 @@ function App() {
   //LOGIN Submit
   const submitLogin = async (values) => {
 
-    const results = await axios.post('http://localhost:3005/login', {
+    const results = await axios.post('https://fedev9-budget-tracker-server.herokuapp.com/login', {
       email: values.email,
       password: values.password
     });
@@ -43,7 +43,7 @@ function App() {
 
     console.log(values);
     const fetchData = async () => {
-      const results = await axios.post('http://localhost:3005/register', {
+      const results = await axios.post('https://fedev9-budget-tracker-server.herokuapp.com/register', {
         email: values.regEmail,
         password: values.regPassword,
         name: values.regName,
